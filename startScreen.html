@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            startScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.2/jquery.mobile.structure-1.4.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.2/jquery.mobile-1.4.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="startScreen"
+        class="type-interior" data-theme="b">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader1" id="startScreen_mobileheader1" class="startScreen_mobileheader1">
+                <h1 dsid="mobileheader1">
+                    Ready
+                </h1>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="startScreen_mobilecontainer1" name="mobilecontainer1"
+            class="startScreen_mobilecontainer1 ui-content" dsid="mobilecontainer1" data-theme="b">
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <!-- mobilecollapsblock_3 -->
+                <div data-role="collapsible" id="startScreen_mobilecollapsblock_3" name="mobilecollapsblock_3"
+                dsid="mobilecollapsblock_3" data-collapsed="false" data-theme="f" data-content-theme="b"
+                data-iconpos='left' class="startScreen_mobilecollapsblock_3">
+                    <h3 id="startScreen_mobilecollapsblockheader_4" name="mobilecollapsblockheader_4"
+                    dsid="mobilecollapsblockheader_4">
+                        Prepare
+                    </h3>
+                    <!-- mobilelist_25 -->
+                    <ul data-role="listview" id="startScreen_mobilelist_25" class="startScreen_mobilelist_25"
+                    name="mobilelist_25" dsid="mobilelist_25" data-inset="true" data-theme="b" data-divider-theme="b"
+                    data-count-theme="b" style="">
+                        <!-- mobilelistitem_26 -->
+                        <li class="startScreen_mobilelistitem_26" data-icon="carat-r">
+                            <a id="startScreen_mobilelistitem_26" name="mobilelistitem_26" dsid="mobilelistitem_26"
+                            tabindex="11" class="startScreen_mobilelistitem_26">
+                            <h3>Be Informed</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem_28 -->
+                        <li class="startScreen_mobilelistitem_28" data-icon="carat-r">
+                            <a id="startScreen_mobilelistitem_28" name="mobilelistitem_28" dsid="mobilelistitem_28"
+                            tabindex="11" class="startScreen_mobilelistitem_28">
+                            <h3>Emergency Kit</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- mobilecollapsblock_10 -->
+                <div data-role="collapsible" id="startScreen_mobilecollapsblock_10" name="mobilecollapsblock_10"
+                dsid="mobilecollapsblock_10" data-collapsed="false" data-theme="g" data-content-theme="b"
+                data-iconpos='left' class="startScreen_mobilecollapsblock_10">
+                    <h3 id="startScreen_mobilecollapsblockheader_11" name="mobilecollapsblockheader_11"
+                    dsid="mobilecollapsblockheader_11">
+                        Disaster Resources
+                    </h3>
+                    <!-- mobilelist_32 -->
+                    <ul data-role="listview" id="startScreen_mobilelist_32" class="startScreen_mobilelist_32"
+                    name="mobilelist_32" dsid="mobilelist_32" data-inset="true" data-theme="b" data-divider-theme="b"
+                    data-count-theme="b" style="">
+                        <!-- mobilelistitem_33 -->
+                        <li class="startScreen_mobilelistitem_33" data-icon="carat-r">
+                            <a id="startScreen_mobilelistitem_33" name="mobilelistitem_33" dsid="mobilelistitem_33"
+                            tabindex="12" class="startScreen_mobilelistitem_33">
+                            <h3>Apply for Assistance</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem_35 -->
+                        <li class="startScreen_mobilelistitem_35" data-icon="carat-r">
+                            <a id="startScreen_mobilelistitem_35" name="mobilelistitem_35" dsid="mobilelistitem_35"
+                            tabindex="12" class="startScreen_mobilelistitem_35">
+                            <h3>Recovery Tips</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- mobilecollapsblock_37 -->
+                <div data-role="collapsible" id="startScreen_mobilecollapsblock_37" name="mobilecollapsblock_37"
+                dsid="mobilecollapsblock_37" data-collapsed="false" data-theme="a" data-content-theme="a"
+                data-iconpos='left' class="startScreen_mobilecollapsblock_37">
+                    <h3 id="startScreen_mobilecollapsblockheader_38" name="mobilecollapsblockheader_38"
+                    dsid="mobilecollapsblockheader_38">
+                        About READY
+                    </h3>
+                    <!-- mobilelabel_40 -->
+                    <div name="mobilelabel_40" id="startScreen_mobilelabel_40" dsid="mobilelabel_40"
+                    data-role="appery_label" class="startScreen_mobilelabel_40">
+                        READY Mission
+                    </div>
+                    <!-- mobilelabel_42 -->
+                    <div name="mobilelabel_42" id="startScreen_mobilelabel_42" dsid="mobilelabel_42"
+                    data-role="appery_label" class="startScreen_mobilelabel_42">
+                        READY mission is to support Filipinos and first responders to ensure that as a nation
+                        we work together to build, sustain, and improve our capability to prepare for, protect
+                        against, respond to, recover from, and mitigate all hazards.
+                    </div>
+                    <!-- mobilelabel_43 -->
+                    <div name="mobilelabel_43" id="startScreen_mobilelabel_43" dsid="mobilelabel_43"
+                    data-role="appery_label" class="startScreen_mobilelabel_43">
+                        Ready App
+                    </div>
+                    <!-- mobilelabel_44 -->
+                    <div name="mobilelabel_44" id="startScreen_mobilelabel_44" dsid="mobilelabel_44"
+                    data-role="appery_label" class="startScreen_mobilelabel_44">
+                        We recognize people are on the go more than ever and need vital preparedness and
+                        disaster recovery information through many modes of communication. Ready App is just
+                        one way the agency is seeking to reach citizens before, during and after disaster
+                        strikes.
+                    </div>
+                </div>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="startScreen_mobilefooter1"
+            name="mobilefooter1" dsid="mobilefooter1" id="startScreen_mobilefooter1" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

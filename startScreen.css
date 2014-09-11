@@ -1,0 +1,90 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.2/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer1 */
+.ui-content.startScreen_mobilecontainer1 {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilecollapsblock_3 */
+.startScreen_mobilecollapsblock_3 {
+	margin: 4px 8px 4px 8px;
+}
+.startScreen_mobilecollapsblock_3 .ui-collapsible-content {
+	padding: 10px 15px 10px 15px;
+}
+/* mobilelist_25 */
+.ui-page .startScreen_mobilelist_25 {
+	margin: 4px 0px 0px 0px;
+}
+/* mobilelistitem_26 */
+/* mobilelistitembutton_27 */
+.startScreen_mobilelistitembutton_27 {
+
+}
+/* mobilelistitem_28 */
+/* mobilelistitembutton_29 */
+.startScreen_mobilelistitembutton_29 {
+
+}
+/* mobilecollapsblock_10 */
+.startScreen_mobilecollapsblock_10 {
+	margin: 4px 8px 4px 8px;
+}
+.startScreen_mobilecollapsblock_10 .ui-collapsible-content {
+	padding: 10px 15px 10px 15px;
+}
+/* mobilelist_32 */
+.ui-page .startScreen_mobilelist_32 {
+	margin: 4px 0px 0px 0px;
+}
+/* mobilelistitem_33 */
+/* mobilelistitembutton_34 */
+.startScreen_mobilelistitembutton_34 {
+
+}
+/* mobilelistitem_35 */
+/* mobilelistitembutton_36 */
+.startScreen_mobilelistitembutton_36 {
+
+}
+/* mobilecollapsblock_37 */
+.startScreen_mobilecollapsblock_37 {
+	margin: 4px 8px 4px 8px;
+}
+.startScreen_mobilecollapsblock_37 .ui-collapsible-content {
+	padding: 10px 15px 10px 15px;
+}
+/* mobilelabel_40 */
+.startScreen_mobilelabel_40 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: center; font-family: Georgia; font-size: 20px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_42 */
+.startScreen_mobilelabel_42 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_43 */
+.startScreen_mobilelabel_43 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: center; font-family: Georgia; font-size: 20px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_44 */
+.startScreen_mobilelabel_44 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter1 */
+.startScreen_mobilefooter1 {
+	min-height:38px;
+}

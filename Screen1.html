@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Screen1
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.2/jquery.mobile.structure-1.4.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.2/jquery.mobile-1.4.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <div data-role="page" style="min-height:480px;" dsid="Screen1" id="Screen1" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="Screen1_mobileheader" class="Screen1_mobileheader">
+                <h1 dsid="mobileheader">
+                    Emergency Kit
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Screen1_mobilecontainer" name="mobilecontainer" class="Screen1_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <link href="Screen1.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Screen1.js">
+                </script>
+                <!-- mobilelabel_2 -->
+                <div name="mobilelabel_2" id="Screen1_mobilelabel_2" dsid="mobilelabel_2" data-role="appery_label"
+                class="Screen1_mobilelabel_2">
+                    Recommended items to include in a basis emergency supply kit. This list allows you
+                    to check items that you currently have in your kit.
+                </div>
+                <div data-role="fieldcontain" class="Screen1_mobilecheckboxgroup_3" id="Screen1_mobilecheckboxgroup_3"
+                dsid="mobilecheckboxgroup_3">
+                    <fieldset data-role="controlgroup" data-theme="b" class="">
+                        <span dsid="mobilecheckbox_4" class="Screen1_mobilecheckbox_4" name="mobilecheckbox_4">
+                            <input type="checkbox" name="mobilecheckboxgroup_3" id="Screen1_mobilecheckbox_4"
+                            tabindex="1" value="Item 1" />
+                            <label id="Screen1_mobilecheckbox_4_label" for="Screen1_mobilecheckbox_4">
+                                Food, at least a three-day supply of non-perishable food.
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_5" class="Screen1_mobilecheckbox_5" name="mobilecheckbox_5">
+                            <input type="checkbox" name="mobilecheckboxgroup_3" id="Screen1_mobilecheckbox_5"
+                            tabindex="1" value="Item 2" />
+                            <label id="Screen1_mobilecheckbox_5_label" for="Screen1_mobilecheckbox_5">
+                                Battery-powered or hand crank radio
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_6" class="Screen1_mobilecheckbox_6" name="mobilecheckbox_6">
+                            <input type="checkbox" name="mobilecheckboxgroup_3" id="Screen1_mobilecheckbox_6"
+                            tabindex="1" value="Item 3" />
+                            <label id="Screen1_mobilecheckbox_6_label" for="Screen1_mobilecheckbox_6">
+                                Flashlight and extra batteries
+                            </label>
+                        </span>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain" class="Screen1_mobilecheckboxgroup_7" id="Screen1_mobilecheckboxgroup_7"
+                dsid="mobilecheckboxgroup_7">
+                    <fieldset data-role="controlgroup" data-theme="b" class="">
+                        <span dsid="mobilecheckbox_8" class="Screen1_mobilecheckbox_8" name="mobilecheckbox_8">
+                            <input type="checkbox" name="mobilecheckboxgroup_7" id="Screen1_mobilecheckbox_8"
+                            tabindex="2" value="Item 11" />
+                            <label id="Screen1_mobilecheckbox_8_label" for="Screen1_mobilecheckbox_8">
+                                First aid kit
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_9" class="Screen1_mobilecheckbox_9" name="mobilecheckbox_9">
+                            <input type="checkbox" name="mobilecheckboxgroup_7" id="Screen1_mobilecheckbox_9"
+                            tabindex="2" value="Item 12" />
+                            <label id="Screen1_mobilecheckbox_9_label" for="Screen1_mobilecheckbox_9">
+                                Cell phone with chargers, inverter or solar charger
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_10" class="Screen1_mobilecheckbox_10" name="mobilecheckbox_10">
+                            <input type="checkbox" name="mobilecheckboxgroup_7" id="Screen1_mobilecheckbox_10"
+                            tabindex="2" value="Item 13" />
+                            <label id="Screen1_mobilecheckbox_10_label" for="Screen1_mobilecheckbox_10">
+                                One gallon of water per person for drinking and sanitation.
+                            </label>
+                        </span>
+                    </fieldset>
+                </div>
+                <!-- mobilecollapsblock_11 -->
+                <div data-role="collapsible" id="Screen1_mobilecollapsblock_11" name="mobilecollapsblock_11"
+                dsid="mobilecollapsblock_11" data-collapsed="false" data-theme="f" data-content-theme="f"
+                data-iconpos='left' class="Screen1_mobilecollapsblock_11">
+                    <h3 id="Screen1_mobilecollapsblockheader_12" name="mobilecollapsblockheader_12"
+                    dsid="mobilecollapsblockheader_12">
+                        My Personal List
+                    </h3>
+                    <!-- mobilelabel_14 -->
+                    <div name="mobilelabel_14" id="Screen1_mobilelabel_14" dsid="mobilelabel_14" data-role="appery_label"
+                    class="Screen1_mobilelabel_14">
+                        You can also also add personal items by clicking &quot;Add&quot; button.
+                    </div>
+                    <!-- mobilecollapsibleset_18 -->
+                    <div data-role="collapsible-set" data-theme="f" data-content-theme=f data-collapsed-icon='plus'
+                    data-expanded-icon='minus' name="mobilecollapsibleset_18" id="Screen1_mobilecollapsibleset_18"
+                    dsid="mobilecollapsibleset_18" class="Screen1_mobilecollapsibleset_18">
+                        <!-- mobilecollapsblock_19 -->
+                        <div data-role="collapsible" id="Screen1_mobilecollapsblock_19" name="mobilecollapsblock_19"
+                        dsid="mobilecollapsblock_19" data-collapsed="true" data-theme="g" data-content-theme="f"
+                        data-iconpos='left' class="Screen1_mobilecollapsblock_19" reRender='mobilecollapsibleset_18'>
+                            <h3 id="Screen1_mobilecollapsblockheader_20" name="mobilecollapsblockheader_20"
+                            dsid="mobilecollapsblockheader_20">
+                                Add
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Screen1_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Screen1_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>
